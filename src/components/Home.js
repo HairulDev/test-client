@@ -18,6 +18,7 @@ const Home = () => {
 
   const handleSearch = () => {
     setSearchQuery(form.search);
+    setCounter(1);
     loadMovies();
   }
 
