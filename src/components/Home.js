@@ -23,7 +23,7 @@ const Home = () => {
   }
 
   const loadMovies = () => {
-    Axios.get(`http://www.omdbapi.com/?apikey=494c2e87&s=${searchQuery ? searchQuery : 'avengers'}&page=${counter}`)
+    Axios.get(`https://www.omdbapi.com/?apikey=494c2e87&s=${searchQuery ? searchQuery : 'avengers'}&page=${counter}`)
       .then(res => {
         const dataAPI = res.data.Search;
         setDataMovies(dataAPI);
